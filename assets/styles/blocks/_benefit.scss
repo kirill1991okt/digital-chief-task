@@ -1,0 +1,130 @@
+.benefit {
+  padding-top: 120px;
+  padding-bottom: 126px;
+
+  &__container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @include h5;
+    text-align: center;
+    margin-bottom: 6px;
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+    @include h3;
+    text-align: center;
+    margin-bottom: 85px;
+    &::before {
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      content: '';
+      width: 60px;
+      height: 3px;
+      background: $main-color;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__column {
+    max-width: 375px;
+    padding-left: 18px;
+
+    li {
+      position: relative;
+      &:after {
+        content: '';
+        width: 1px;
+        height: 104%;
+        position: absolute;
+        top: -6px;
+        left: -43px;
+        background-color: $black;
+      }
+    }
+
+    &-title {
+      @include title;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: $main-color;
+        border-radius: 100%;
+        left: -50px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &::before {
+      content: '';
+      height: 1px;
+      width: 42px;
+      position: absolute;
+      top: 62px;
+      left: -42px;
+      background-color: $black;
+    }
+
+    &-main {
+      position: relative;
+      padding: 45px 0 0 56px;
+    }
+
+    &-icon {
+      position: absolute;
+      top: 50px;
+      left: 45px;
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -6px;
+        left: -45px;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: $main-color;
+      }
+
+      img {
+        position: absolute;
+        top: 8px;
+        left: -28px;
+      }
+    }
+
+    &-education {
+      @include addition-title;
+    }
+
+    &-location {
+      @include text;
+    }
+
+    &-descr {
+      @include text;
+      margin-top: 12px;
+    }
+  }
+}

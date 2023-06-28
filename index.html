@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="promo">
+      <div class="promo__container">
+        <h4 class="promo__title">Меня зовут Александр Смит</h4>
+        <h2 class="promo__profession">Я web-разработчик из города Москва</h2>
+        <div class="promo__wrap">
+          <button class="promo__btn">Портфолио</button>
+          <a class="promo__link" href="#">Про меня</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefit">
+      <div class="benefit__container">
+        <h5 class="benefit__title">Опыт</h5>
+        <h3 class="benefit__subtitle">Чем я буду полезна</h3>
+
+        <div class="benefit__wrap">
+          <div class="benefit__column">
+            <h4 class="benefit__column-title">Образование</h4>
+            <ul>
+              <li>
+                <div class="benefit__item">
+                  <div class="benefit__item-main">
+                    <div class="benefit__item-icon">
+                      <img
+                        src="./assets/img/icon/University.svg"
+                        alt="university"
+                      />
+                    </div>
+                    <div class="benefit__item-education">
+                      МГТУ им. Н. Э. Баумана
+                    </div>
+                    <div class="benefit__item-location">
+                      Диплом магистра | Москва (2014-2020)
+                    </div>
+                  </div>
+                  <p class="benefit__item-descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmo.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="benefit__item">
+                  <div class="benefit__item-main">
+                    <div class="benefit__item-icon">
+                      <img src="./assets/img/icon/Courses.svg" alt="courses" />
+                    </div>
+                    <div class="benefit__item-education">Udemy</div>
+                    <div class="benefit__item-location">
+                      Курсы по Web-разработке
+                    </div>
+                  </div>
+                  <p class="benefit__item-descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmo.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="benefit__column">
+            <h4 class="benefit__column-title">Опыт работы</h4>
+            <ul>
+              <li>
+                <div class="benefit__item">
+                  <div class="benefit__item-main">
+                    <div class="benefit__item-icon">
+                      <img src="./assets/img/icon/seo 1.svg" alt="developer" />
+                    </div>
+                    <div class="benefit__item-education">
+                      Front-End Developer
+                    </div>
+                    <div class="benefit__item-location">
+                      EPAM | Москва (2018-2019)
+                    </div>
+                  </div>
+                  <p class="benefit__item-descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmo.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="benefit__item">
+                  <div class="benefit__item-main">
+                    <div class="benefit__item-icon">
+                      <img
+                        src="./assets/img/icon/designer.svg"
+                        alt="designer"
+                      />
+                    </div>
+                    <div class="benefit__item-education">UI/UX Designer</div>
+                    <div class="benefit__item-location">
+                      Squad Team | Москва (2018)
+                    </div>
+                  </div>
+                  <p class="benefit__item-descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmo.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__container">
+        <div class="contacts__wrap">
+          <div class="contacts__photo">
+            <img src="./assets/img/Photo.png" alt="photo" />
+          </div>
+
+          <div class="contacts__descr">
+            <h5 class="contacts__title">Контакты</h5>
+            <h3 class="contacts__subtitle">Свяжитесь со мной</h3>
+
+            <div class="contacts__text">Любым удобным для вас способом:</div>
+            <div class="contacts__social">
+              <a href="https://www.facebook.com" class="contacts__link">
+                <img
+                  src="./assets/img/icon/social/Facebook.svg"
+                  alt="facebook"
+                />
+              </a>
+              <a href="https://web.telegram.org/" class="contacts__link">
+                <img
+                  src="./assets/img/icon/social/Telegram.svg"
+                  alt="telegram"
+                />
+              </a>
+              <a href="https://www.instagram.com/" class="contacts__link">
+                <img
+                  src="./assets/img/icon/social/Instagram.svg"
+                  alt="instagram"
+                />
+              </a>
+            </div>
+            <div class="contacts__text">
+              Или оставьте ваши данные и я сама вам напишу:
+            </div>
+
+            <form id="signup" class="contacts__form" action="#" method="post">
+              <div class="contacts__input">
+                <input required name="name" id="name" type="text" />
+                <label for="name">Ваше имя</label>
+                <small></small>
+              </div>
+              <div class="contacts__input">
+                <input required name="email" id="email" type="email" />
+                <label for="email">Ваша почта</label>
+                <small></small>
+              </div>
+
+              <div class="contacts__textarea">
+                <textarea name="text" id="text"></textarea>
+                <label for="text">Ваше сообщение</label>
+              </div>
+              <div class="contacts__triggers">
+                <button class="contacts__btn btn">Отправить сообщение</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

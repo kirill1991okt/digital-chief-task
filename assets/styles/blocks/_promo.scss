@@ -1,0 +1,39 @@
+.promo {
+  min-height: 100vh;
+  background: url('../img/Background.jpg') no-repeat 50% / cover;
+
+  &__container {
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 206px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    @include h5;
+    padding-left: 10px;
+    margin-bottom: 9px;
+  }
+
+  &__profession {
+    max-width: 532px;
+    @include h2;
+    margin-bottom: 33px;
+  }
+
+  &__btn {
+    @include button;
+    padding: 12px 27px;
+    margin-right: 40px;
+  }
+
+  &__link {
+    color: $black;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
