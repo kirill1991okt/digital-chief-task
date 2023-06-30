@@ -4,12 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
-    <title>Document</title>
+    <title>Digital chief</title>
   </head>
   <body>
+    <aside class="social">
+      <a href="https://facebook.com/" class="social__link">
+        <img src="./assets/img/icon/social/Facebook-small.svg" alt="facebook" />
+      </a>
+      <a href="https://instagram.com/" class="social__link">
+        <img
+          src="./assets/img/icon/social/Instagram-small.svg"
+          alt="instagram"
+        />
+      </a>
+      <a href="https://github.com/" class="social__link">
+        <img src="./assets/img/icon/social/Github.svg" alt="github" />
+      </a>
+      <div class="social__line"></div>
+      <div class="social__text"><span>Социальные сети</span></div>
+    </aside>
+
+    <div class="menu">
+      <div class="menu__wrap">
+        <div class="menu__close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="29"
+            height="29"
+            fill="black"
+            viewBox="0 0 29 29"
+          >
+            <path
+              d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z"
+            />
+          </svg>
+        </div>
+
+        <nav>
+          <ul class="menu__list">
+            <li class="menu__list-link"><a href="#">ПРО МЕНЯ</a></li>
+            <li class="menu__list-link"><a href="#">МОЙ ОПЫТ</a></li>
+            <li class="menu__list-link"><a href="#">МОИ НАВЫКИ</a></li>
+            <li class="menu__list-link"><a href="#">МОИ РАБОТЫ</a></li>
+            <li class="menu__list-link"><a href="#">ПРАЙС-ЛИСТ</a></li>
+            <li class="menu__list-link"><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+        </nav>
+
+        <div class="menu__social">
+          <a href="https://facebook.com/" class="menu__link">
+            <img
+              src="./assets/img/icon/social/Facebook-small.svg"
+              alt="facebook"
+            />
+          </a>
+          <a href="https://instagram.com/" class="menu__link">
+            <img
+              src="./assets/img/icon/social/Instagram-small.svg"
+              alt="instagram"
+            />
+          </a>
+          <a href="https://github.com/" class="menu__link">
+            <img src="./assets/img/icon/social/Github.svg" alt="github" />
+          </a>
+        </div>
+      </div>
+      <div class="menu__overlay"></div>
+    </div>
+
     <section class="promo">
+      <div class="hamburger">
+        <span></span>
+        <span class="midline"></span>
+        <span></span>
+      </div>
       <div class="promo__container">
-        <h4 class="promo__title">Меня зовут Александр Смит</h4>
+        <h4 class="promo__title">Меня зовут Александра Смит</h4>
         <h2 class="promo__profession">Я web-разработчик из города Москва</h2>
         <div class="promo__wrap">
           <button class="promo__btn">Портфолио</button>
@@ -79,7 +149,7 @@
                 <div class="benefit__item">
                   <div class="benefit__item-main">
                     <div class="benefit__item-icon">
-                      <img src="./assets/img/icon/seo 1.svg" alt="developer" />
+                      <img src="./assets/img/icon/seo.svg" alt="developer" />
                     </div>
                     <div class="benefit__item-education">
                       Front-End Developer
@@ -176,13 +246,33 @@
                 <textarea name="text" id="text"></textarea>
                 <label for="text">Ваше сообщение</label>
               </div>
+              <div class="contacts__policy">
+                <input
+                  type="checkbox"
+                  class="contacts__custom-checkbox"
+                  id="checkbox-custom"
+                  name="checkbox"
+                />
+                <label for="checkbox-custom"
+                  >Я согласен(а) с
+                  <span class="contacts__policy-blue">
+                    политикой конфиденциальности
+                  </span>
+                </label>
+              </div>
               <div class="contacts__triggers">
-                <button class="contacts__btn btn">Отправить сообщение</button>
+                <input
+                  class="contacts__btn"
+                  type="submit"
+                  value="Отправить сообщение"
+                />
               </div>
             </form>
           </div>
         </div>
       </div>
     </section>
+
+    <script type="module" src="./assets/js/index.js"></script>
   </body>
 </html>

@@ -36,22 +36,22 @@
 
   &__wrap {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 94px 0 75px;
   }
 
   &__column {
-    max-width: 375px;
-    padding-left: 18px;
+    max-width: 410px;
 
     li {
       position: relative;
       &:after {
         content: '';
         width: 1px;
-        height: 104%;
+        height: 100%;
         position: absolute;
         top: -6px;
-        left: -43px;
+        left: -3px;
         background-color: $black;
       }
     }
@@ -59,6 +59,7 @@
     &-title {
       @include title;
       position: relative;
+      padding-left: 40px;
       &:before {
         content: '';
         position: absolute;
@@ -66,7 +67,7 @@
         height: 15px;
         background: $main-color;
         border-radius: 100%;
-        left: -50px;
+        left: -10px;
         top: 50%;
         transform: translateY(-50%);
       }
@@ -81,14 +82,14 @@
       height: 1px;
       width: 42px;
       position: absolute;
-      top: 62px;
-      left: -42px;
+      top: 63px;
+      left: -2px;
       background-color: $black;
     }
 
     &-main {
       position: relative;
-      padding: 45px 0 0 56px;
+      padding: 48px 0 0 100px;
     }
 
     &-icon {
@@ -100,7 +101,7 @@
         position: absolute;
         z-index: -1;
         top: -6px;
-        left: -45px;
+        left: -5px;
         width: 36px;
         height: 36px;
         border-radius: 100%;
@@ -109,8 +110,8 @@
 
       img {
         position: absolute;
-        top: 8px;
-        left: -28px;
+        top: 9px;
+        left: 12px;
       }
     }
 
@@ -124,6 +125,7 @@
 
     &-descr {
       @include text;
+      padding-left: 40px;
       margin-top: 12px;
     }
   }

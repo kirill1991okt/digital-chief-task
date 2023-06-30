@@ -14,6 +14,14 @@
     justify-content: space-between;
   }
 
+  &__photo {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
   &__descr {
     padding-top: 6px;
   }
@@ -50,8 +58,6 @@
     max-width: 140px;
     padding: 20px 0;
   }
-
-  // разобраться с формой
 
   &__form {
     margin-top: 30px;
@@ -100,10 +106,6 @@
     border-color: red;
   }
 
-  &__input.success input {
-    border-color: green;
-  }
-
   &__input small {
     color: red;
   }
@@ -119,10 +121,57 @@
       font-size: 12px;
     }
   }
+
+  &__policy {
+    display: none;
+    position: relative;
+    grid-column: 1 / 3;
+
+    &-blue {
+      display: contents;
+      color: $blue;
+    }
+  }
+
+  &__custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &__custom-checkbox + label {
+    @include text;
+    line-height: normal;
+    position: initial;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    padding: 0 20%;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 11px;
+      height: 11px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid $black;
+      margin-right: 10px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+    }
+  }
+
+  &__custom-checkbox:checked + label {
+    &::before {
+      border-color: $blue;
+      background-color: $blue;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    }
+  }
+
   &__btn {
-    border: none;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 21px;
+    @include button;
   }
 }
